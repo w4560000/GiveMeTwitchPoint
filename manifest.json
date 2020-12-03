@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "GiveMeTwitchPoint",
+  "description": "This extension can auto detect Twitch Point Button then Get Point.",
+  "version": "1.0",
+  "content_scripts" : [
+    {
+      "matches" : [ "http://localhost:6001/*" ],
+      "js" : [ "event.js" ]
+    }
+  ]
+}
