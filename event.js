@@ -1,13 +1,12 @@
 var giveMePoint = () =>
 {
-    //document.getElementById("test").click();
-    console.log(++a);
+    let btn = $('.tw-transition--enter-done .tw-button--success');
+
+    if(btn !== null) {
+    	btn.click();
+	console.log(new Date(), "click");
+    }
 };
-
-var a = 1;
-
-
-
 
 
 setInterval(giveMePoint, 2000);
